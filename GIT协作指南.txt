@@ -1,0 +1,50 @@
+Git是本地远程版本协作系统，需远程服务器和本地客户端配合使用。
+
+
+一、Github注册与认证 
+1、在http:github.com注册，需用户名+电子邮件
+
+二、建立远程资料库
+1、 点击“new repository”
+2、 填写资料库名字(Repository name)：XXX，其他默认
+3、 点击生成资料库(Create repository)
+
+三、客户端安装与操作：
+1、下载客户端 http://git-scm.com/download/
+2、获取安装文件 Git-1.9.5-preview20150319.exe
+3、默认选项安装
+
+四、本地GIT全局设置
+1、在开始->程序->Git->Git Bash，启动命令行窗口。
+2、设置本地Git全局用户名，git config --global user.name 'yourname'
+   注意：此处用户名与在远程Github注册的用户名一致
+3、设置本地Git全局用户名，git config --global user.email youremail@your.net
+   注意：此处用户名与在远程Github注册的用户名一致
+4、关闭Git bash窗口 
+
+四、在本地桌面机器合适位置建立本地资料库
+1、建立资料库文件夹  例如：d:/git/XXX 
+   注意：若远程与本地协调工作，文件夹名字应一致（如XXX） 
+2、右键点击文件夹，选择“git init”菜单。
+   替代的命令为：git init （在当前目录下的git bash窗口输入）  
+3、在文件夹内，放入“开题报告”文件
+4、缓存本地资料库的更新：选择“git add”菜单
+   替代的命令为：git add . (或者 git add “开题报告”文件名)
+5、提交本地资料库的更新：选择“git commit”菜单
+   替代的命令为：git commit -m "first commit"
+   注意，"first commit" 是每次提交更新时，对文档修改的简单说明。
+6、推送本地资料库到远端资料库
+   替代命令 
+   git remote add origin https://github.com/user.name/XXX.git
+   git push -u origin master
+经过以上步骤，远端资料库已接受你的资料。
+
+git的作用是能够保留一个文件不同时期的版本，每次本地修改的文件，需要经过缓存->提交->上传,即可存储在远程服务器上。
+
+五、开题报告的协作过程
+
+1、学生访问https://github.com/qiaoshuang/12stu ，下载本人的开题报告。
+2、在以上的github注册和创建资料库中，把下载的开题报告加入学生本人的资料库中。
+3、老师会在学生的资料库中产生一个分叉（fork），修改学生的开题报告后，回传给学生。
+4、次过程可反复进行，每个阶段都会记录在资料库中，保证阶段信息完整。    
+ 
